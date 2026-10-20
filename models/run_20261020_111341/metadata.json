@@ -1,0 +1,13 @@
+{
+  "dataset": "NASA_CM1_sample",
+  "seed": 42,
+  "selected_features": [
+    "e",
+    "b",
+    "lOCode",
+    "branchCount"
+  ],
+  "created": "2026-10-20T11:13:41",
+  "mode": "RESEARCH",
+  "training_seconds": 8.852351167006418
+}

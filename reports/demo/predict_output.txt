@@ -1,0 +1,13 @@
+Model: /workspace/NeuroDefect/models/shared/cm1_seed42  (threshold 0.275, 187 modules)
+  #  tier      risk p(def)  rule  module
+  1  CRITICAL  80.6  0.434  R02   scanner/radon_scanner.py::scan_folder
+  2  CRITICAL  78.9  0.492  R02   ui/charts.py::contribution_bars
+  3  CRITICAL  78.0  0.488  R02   scanner/radon_scanner.py::_raw_counts
+  4  CRITICAL  76.9  0.575  R02   ui/components.py::html_table
+  5  CRITICAL  76.7  0.410  R02   pipeline/artifacts.py::load_latest
+  6  CRITICAL  76.1  0.496  R02   feature_selection/ga_selector.py::_cv_score
+  7  CRITICAL  76.0  0.487  R02   cli/main.py::_cmd_predict
+  8  CRITICAL  76.0  0.467  R01   evaluation/cv.py::repeated_cv
+  9  CRITICAL  75.9  0.450  R02   pipeline/inference.py::resolve_model_dir
+ 10  CRITICAL  75.9  0.449  R02   fuzzy/membership.py::Triangle.membership
+Tiers: CRITICAL=18, HIGH=52, MEDIUM=60, LOW=57

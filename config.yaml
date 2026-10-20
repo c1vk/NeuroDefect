@@ -1,0 +1,71 @@
+mode: MVP  # MVP | RESEARCH
+
+dataset:
+  name: NASA_CM1
+  path: data/sample/NASA_CM1_sample.csv
+  target_column: defects
+
+training:
+  test_size: 0.30
+  random_state: 42
+  batch_size: 32
+  epochs: 80
+  learning_rate: 0.001
+  optimizer: adam  # sgd | sgd_momentum | adam
+  momentum: 0.9
+  patience: 12
+  hidden_sizes: [64, 32]
+  dropout: 0.2
+  tune_threshold: true  # tune decision threshold on train-only val split
+  threshold_mode: f1   # f1 | accuracy_floor | cost_sensitive
+  accuracy_floor: 0.65 # used when threshold_mode = accuracy_floor
+  ensemble: false      # true = BPN+RF weighted ensemble (weight tuned on held-out real training rows) feeds the fuzzy layer
+  fn_cost: 2.0         # used when threshold_mode = cost_sensitive (cost of a missed defect vs a false alarm)
+
+smote:
+  enabled: true
+  k_neighbors: 5
+  # Ablation: SMOTE helped the synthetic sample and PC1, and hurt CM1 and JM1.
+  skip_for: [cm1, jm1]
+  force: false
+
+ga:
+  method: ga              # ga | pso (feature selection algorithm; ga.enabled: false = all features)
+  fitness_model: logistic # logistic feature filter | bpn (small copy of the shipped network)
+  population_size: 16
+  generations: 12
+  crossover_probability: 0.80
+  mutation_probability: 0.05
+  random_state: 42
+  min_features: 4
+  max_features: null
+  fitness_metric: f1
+  lambda_penalty: 0.15
+
+fuzzy:
+  enabled: true
+  ga_tune: false   # true = GA tunes membership triangles on train-only data
+  ga:
+    population_size: 12
+    generations: 8
+    crossover_probability: 0.7
+    mutation_probability: 0.2
+    fitness_mode: hybrid  # hybrid (0.6*F1[tier>=HIGH] + 0.4*corr) | high_f1 | corr
+  risk_bounds:
+    LOW: [0, 25]
+    MEDIUM: [25, 50]
+    HIGH: [50, 75]
+    CRITICAL: [75, 100]
+
+research:
+  ga:
+    population_size: 40
+    generations: 30
+    fitness_model: bpn
+  training:
+    epochs: 120
+    patience: 16
+
+ui:
+  operator_name: Dr. Alan Vance
+  operator_id: LAB-RE_01

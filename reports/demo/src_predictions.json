@@ -1,0 +1,4812 @@
+[
+  {
+    "rank":1,
+    "module_id":"scanner\/radon_scanner.py::scan_folder",
+    "defect_probability":0.4336040914,
+    "predicted_defective":true,
+    "risk_score":80.589528877,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.7786803047,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.779
+      ],
+      [
+        "R01",
+        0.234
+      ],
+      [
+        "R09",
+        0.234
+      ],
+      [
+        "R12",
+        0.11
+      ]
+    ]
+  },
+  {
+    "rank":2,
+    "module_id":"ui\/charts.py::contribution_bars",
+    "defect_probability":0.4918984771,
+    "predicted_defective":true,
+    "risk_score":78.8775715177,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.9729949236,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.973
+      ],
+      [
+        "R01",
+        0.357
+      ],
+      [
+        "R09",
+        0.357
+      ],
+      [
+        "R12",
+        0.219
+      ]
+    ]
+  },
+  {
+    "rank":3,
+    "module_id":"scanner\/radon_scanner.py::_raw_counts",
+    "defect_probability":0.4881282747,
+    "predicted_defective":true,
+    "risk_score":77.973686516,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.9604275823,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.96
+      ],
+      [
+        "R12",
+        0.438
+      ],
+      [
+        "R01",
+        0.236
+      ],
+      [
+        "R09",
+        0.205
+      ]
+    ]
+  },
+  {
+    "rank":4,
+    "module_id":"ui\/components.py::html_table",
+    "defect_probability":0.5752810836,
+    "predicted_defective":true,
+    "risk_score":76.8921340735,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.6988756657,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.699
+      ],
+      [
+        "R12",
+        0.466
+      ],
+      [
+        "R01",
+        0.218
+      ],
+      [
+        "R09",
+        0.168
+      ],
+      [
+        "R05",
+        0.056
+      ],
+      [
+        "R06",
+        0.056
+      ]
+    ]
+  },
+  {
+    "rank":5,
+    "module_id":"pipeline\/artifacts.py::load_latest",
+    "defect_probability":0.4099199474,
+    "predicted_defective":true,
+    "risk_score":76.7498872145,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.699733158,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.7
+      ],
+      [
+        "R01",
+        0.485
+      ],
+      [
+        "R09",
+        0.485
+      ],
+      [
+        "R12",
+        0.31
+      ],
+      [
+        "R08",
+        0.211
+      ]
+    ]
+  },
+  {
+    "rank":6,
+    "module_id":"feature_selection\/ga_selector.py::_cv_score",
+    "defect_probability":0.495521456,
+    "predicted_defective":true,
+    "risk_score":76.0652378991,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.98507152,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.985
+      ],
+      [
+        "R01",
+        0.892
+      ],
+      [
+        "R09",
+        0.892
+      ],
+      [
+        "R12",
+        0.595
+      ]
+    ]
+  },
+  {
+    "rank":7,
+    "module_id":"cli\/main.py::_cmd_predict",
+    "defect_probability":0.486707747,
+    "predicted_defective":true,
+    "risk_score":76.0292753088,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.9556924899,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.956
+      ],
+      [
+        "R01",
+        0.923
+      ],
+      [
+        "R09",
+        0.923
+      ],
+      [
+        "R12",
+        0.324
+      ],
+      [
+        "R08",
+        0.053
+      ]
+    ]
+  },
+  {
+    "rank":8,
+    "module_id":"evaluation\/cv.py::repeated_cv",
+    "defect_probability":0.4673225284,
+    "predicted_defective":true,
+    "risk_score":75.9784412902,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.8910750945,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.891
+      ],
+      [
+        "R02",
+        0.891
+      ],
+      [
+        "R09",
+        0.891
+      ],
+      [
+        "R12",
+        0.686
+      ]
+    ]
+  },
+  {
+    "rank":9,
+    "module_id":"pipeline\/inference.py::resolve_model_dir",
+    "defect_probability":0.4498552978,
+    "predicted_defective":true,
+    "risk_score":75.9198107285,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.8328509927,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.833
+      ],
+      [
+        "R12",
+        0.833
+      ],
+      [
+        "R01",
+        0.392
+      ],
+      [
+        "R09",
+        0.22
+      ]
+    ]
+  },
+  {
+    "rank":10,
+    "module_id":"fuzzy\/membership.py::Triangle.membership",
+    "defect_probability":0.4489223659,
+    "predicted_defective":true,
+    "risk_score":75.9159159661,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.8297412197,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. Dense branching with high cyclomatic complexity increases untested path risk. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R02",
+        0.83
+      ],
+      [
+        "R12",
+        0.83
+      ],
+      [
+        "R01",
+        0.635
+      ],
+      [
+        "R09",
+        0.137
+      ]
+    ]
+  },
+  {
+    "rank":11,
+    "module_id":"ui\/pages\/training.py::render",
+    "defect_probability":0.8933565021,
+    "predicted_defective":true,
+    "risk_score":75.8179967305,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.763014449,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.763
+      ],
+      [
+        "R02",
+        0.763
+      ],
+      [
+        "R05",
+        0.763
+      ],
+      [
+        "R12",
+        0.763
+      ],
+      [
+        "R08",
+        0.684
+      ],
+      [
+        "R11",
+        0.684
+      ],
+      [
+        "R06",
+        0.545
+      ],
+      [
+        "R09",
+        0.545
+      ]
+    ]
+  },
+  {
+    "rank":12,
+    "module_id":"data\/validator.py::encode_binary_target",
+    "defect_probability":0.5733700395,
+    "predicted_defective":true,
+    "risk_score":75.7121363375,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.7065198421,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.707
+      ],
+      [
+        "R02",
+        0.707
+      ],
+      [
+        "R08",
+        0.707
+      ],
+      [
+        "R09",
+        0.707
+      ],
+      [
+        "R12",
+        0.707
+      ],
+      [
+        "R05",
+        0.052
+      ],
+      [
+        "R06",
+        0.052
+      ],
+      [
+        "R11",
+        0.052
+      ]
+    ]
+  },
+  {
+    "rank":13,
+    "module_id":"ui\/pages\/dataset.py::render",
+    "defect_probability":0.849896431,
+    "predicted_defective":true,
+    "risk_score":75.6248958105,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.6664365133,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.666
+      ],
+      [
+        "R02",
+        0.666
+      ],
+      [
+        "R05",
+        0.666
+      ],
+      [
+        "R06",
+        0.666
+      ],
+      [
+        "R08",
+        0.666
+      ],
+      [
+        "R09",
+        0.666
+      ],
+      [
+        "R11",
+        0.666
+      ],
+      [
+        "R12",
+        0.666
+      ]
+    ]
+  },
+  {
+    "rank":14,
+    "module_id":"ui\/pages\/dashboard.py::_render_ga_diagnostics",
+    "defect_probability":0.5976045132,
+    "predicted_defective":true,
+    "risk_score":75.4837145125,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.6095819473,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.61
+      ],
+      [
+        "R02",
+        0.61
+      ],
+      [
+        "R09",
+        0.61
+      ],
+      [
+        "R12",
+        0.61
+      ],
+      [
+        "R08",
+        0.474
+      ],
+      [
+        "R05",
+        0.106
+      ],
+      [
+        "R06",
+        0.106
+      ],
+      [
+        "R11",
+        0.106
+      ]
+    ]
+  },
+  {
+    "rank":15,
+    "module_id":"models\/bpn.py::BPNClassifier._fit_torch",
+    "defect_probability":0.8222821951,
+    "predicted_defective":true,
+    "risk_score":75.4716474277,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.6050715446,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.605
+      ],
+      [
+        "R02",
+        0.605
+      ],
+      [
+        "R05",
+        0.605
+      ],
+      [
+        "R06",
+        0.605
+      ],
+      [
+        "R08",
+        0.605
+      ],
+      [
+        "R09",
+        0.605
+      ],
+      [
+        "R11",
+        0.605
+      ],
+      [
+        "R12",
+        0.605
+      ]
+    ]
+  },
+  {
+    "rank":16,
+    "module_id":"explainability\/shap_explainer.py::shap_values",
+    "defect_probability":0.6009901166,
+    "predicted_defective":true,
+    "risk_score":75.4470283983,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.5960395336,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.596
+      ],
+      [
+        "R02",
+        0.596
+      ],
+      [
+        "R09",
+        0.596
+      ],
+      [
+        "R12",
+        0.596
+      ],
+      [
+        "R05",
+        0.113
+      ],
+      [
+        "R06",
+        0.113
+      ]
+    ]
+  },
+  {
+    "rank":17,
+    "module_id":"ui\/pages\/dashboard.py::render",
+    "defect_probability":0.8165637255,
+    "predicted_defective":true,
+    "risk_score":75.4368109581,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.5923638344,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.592
+      ],
+      [
+        "R02",
+        0.592
+      ],
+      [
+        "R05",
+        0.592
+      ],
+      [
+        "R06",
+        0.592
+      ],
+      [
+        "R08",
+        0.592
+      ],
+      [
+        "R09",
+        0.592
+      ],
+      [
+        "R11",
+        0.592
+      ],
+      [
+        "R12",
+        0.592
+      ]
+    ]
+  },
+  {
+    "rank":18,
+    "module_id":"evaluation\/cv.py::run_fold",
+    "defect_probability":0.7880085707,
+    "predicted_defective":true,
+    "risk_score":75.2460300158,
+    "risk_tier":"CRITICAL",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.5289079348,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"IMMEDIATE CODE REVIEW REQUIRED. High McCabe complexity combined with high Halstead effort is associated with defect-prone modules. Prioritize this module for manual testing and inspection.",
+    "fired_rules":[
+      [
+        "R01",
+        0.529
+      ],
+      [
+        "R02",
+        0.529
+      ],
+      [
+        "R05",
+        0.529
+      ],
+      [
+        "R06",
+        0.529
+      ],
+      [
+        "R08",
+        0.529
+      ],
+      [
+        "R09",
+        0.529
+      ],
+      [
+        "R11",
+        0.529
+      ],
+      [
+        "R12",
+        0.529
+      ]
+    ]
+  },
+  {
+    "rank":19,
+    "module_id":"pipeline\/inference.py::predict_frame",
+    "defect_probability":0.7519680858,
+    "predicted_defective":true,
+    "risk_score":74.9582825812,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.4488179684,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 75.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.449
+      ],
+      [
+        "R02",
+        0.449
+      ],
+      [
+        "R05",
+        0.449
+      ],
+      [
+        "R06",
+        0.449
+      ],
+      [
+        "R08",
+        0.449
+      ],
+      [
+        "R09",
+        0.449
+      ],
+      [
+        "R11",
+        0.449
+      ],
+      [
+        "R12",
+        0.449
+      ]
+    ]
+  },
+  {
+    "rank":20,
+    "module_id":"ui\/pages\/comparison.py::render",
+    "defect_probability":0.7486990094,
+    "predicted_defective":true,
+    "risk_score":74.9283929899,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.4415533543,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 74.9% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.442
+      ],
+      [
+        "R02",
+        0.442
+      ],
+      [
+        "R05",
+        0.442
+      ],
+      [
+        "R06",
+        0.442
+      ],
+      [
+        "R08",
+        0.442
+      ],
+      [
+        "R09",
+        0.442
+      ],
+      [
+        "R11",
+        0.442
+      ],
+      [
+        "R12",
+        0.442
+      ]
+    ]
+  },
+  {
+    "rank":21,
+    "module_id":"data\/imbalance.py::apply_smote",
+    "defect_probability":0.6438925862,
+    "predicted_defective":true,
+    "risk_score":74.8575555595,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.4244296551,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 64.4% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.424
+      ],
+      [
+        "R02",
+        0.424
+      ],
+      [
+        "R08",
+        0.424
+      ],
+      [
+        "R09",
+        0.424
+      ],
+      [
+        "R12",
+        0.424
+      ],
+      [
+        "R05",
+        0.209
+      ],
+      [
+        "R06",
+        0.209
+      ],
+      [
+        "R11",
+        0.209
+      ]
+    ]
+  },
+  {
+    "rank":22,
+    "module_id":"ui\/pages\/scan_predict.py::_shap_block",
+    "defect_probability":0.6517430544,
+    "predicted_defective":true,
+    "risk_score":74.7164218114,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3930277824,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 65.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.393
+      ],
+      [
+        "R02",
+        0.393
+      ],
+      [
+        "R09",
+        0.393
+      ],
+      [
+        "R12",
+        0.393
+      ],
+      [
+        "R05",
+        0.226
+      ],
+      [
+        "R06",
+        0.226
+      ]
+    ]
+  },
+  {
+    "rank":23,
+    "module_id":"data\/cleaner.py::clean_frame",
+    "defect_probability":0.7262303233,
+    "predicted_defective":true,
+    "risk_score":74.7097718353,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3916229407,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 72.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.392
+      ],
+      [
+        "R02",
+        0.392
+      ],
+      [
+        "R05",
+        0.392
+      ],
+      [
+        "R06",
+        0.392
+      ],
+      [
+        "R08",
+        0.392
+      ],
+      [
+        "R09",
+        0.392
+      ],
+      [
+        "R11",
+        0.392
+      ],
+      [
+        "R12",
+        0.392
+      ]
+    ]
+  },
+  {
+    "rank":24,
+    "module_id":"fuzzy\/risk_engine.py::_feature_contributions",
+    "defect_probability":0.6523031592,
+    "predicted_defective":true,
+    "risk_score":74.7057971325,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3907873631,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 65.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.391
+      ],
+      [
+        "R02",
+        0.391
+      ],
+      [
+        "R09",
+        0.391
+      ],
+      [
+        "R12",
+        0.384
+      ],
+      [
+        "R05",
+        0.227
+      ],
+      [
+        "R06",
+        0.227
+      ]
+    ]
+  },
+  {
+    "rank":25,
+    "module_id":"models\/bpn.py::BPNClassifier.from_weights",
+    "defect_probability":0.6596879959,
+    "predicted_defective":true,
+    "risk_score":74.5575079238,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3612480164,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 66.0% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.361
+      ],
+      [
+        "R02",
+        0.361
+      ],
+      [
+        "R08",
+        0.361
+      ],
+      [
+        "R09",
+        0.361
+      ],
+      [
+        "R12",
+        0.361
+      ],
+      [
+        "R05",
+        0.244
+      ],
+      [
+        "R06",
+        0.244
+      ],
+      [
+        "R11",
+        0.244
+      ]
+    ]
+  },
+  {
+    "rank":26,
+    "module_id":"data\/columns.py::shared_subset",
+    "defect_probability":0.7035961151,
+    "predicted_defective":true,
+    "risk_score":74.4484132009,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.3413247002,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 70.4% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.341
+      ],
+      [
+        "R05",
+        0.341
+      ],
+      [
+        "R12",
+        0.341
+      ],
+      [
+        "R01",
+        0.256
+      ],
+      [
+        "R06",
+        0.084
+      ],
+      [
+        "R09",
+        0.084
+      ]
+    ]
+  },
+  {
+    "rank":27,
+    "module_id":"models\/bpn.py::_tune_threshold",
+    "defect_probability":0.6989881396,
+    "predicted_defective":true,
+    "risk_score":74.3896407561,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3310847547,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 69.9% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.331
+      ],
+      [
+        "R02",
+        0.331
+      ],
+      [
+        "R05",
+        0.331
+      ],
+      [
+        "R06",
+        0.331
+      ],
+      [
+        "R08",
+        0.331
+      ],
+      [
+        "R09",
+        0.331
+      ],
+      [
+        "R11",
+        0.331
+      ],
+      [
+        "R12",
+        0.331
+      ]
+    ]
+  },
+  {
+    "rank":28,
+    "module_id":"scanner\/radon_scanner.py::scan_file",
+    "defect_probability":0.6967917085,
+    "predicted_defective":true,
+    "risk_score":74.3606618759,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3262037966,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 69.7% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.326
+      ],
+      [
+        "R02",
+        0.326
+      ],
+      [
+        "R05",
+        0.326
+      ],
+      [
+        "R06",
+        0.326
+      ],
+      [
+        "R08",
+        0.326
+      ],
+      [
+        "R09",
+        0.326
+      ],
+      [
+        "R11",
+        0.326
+      ],
+      [
+        "R12",
+        0.326
+      ]
+    ]
+  },
+  {
+    "rank":29,
+    "module_id":"scanner\/radon_scanner.py::token_halstead",
+    "defect_probability":0.6965797544,
+    "predicted_defective":true,
+    "risk_score":74.3578232721,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3257327875,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 69.7% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.326
+      ],
+      [
+        "R02",
+        0.326
+      ],
+      [
+        "R05",
+        0.326
+      ],
+      [
+        "R06",
+        0.326
+      ],
+      [
+        "R08",
+        0.326
+      ],
+      [
+        "R09",
+        0.326
+      ],
+      [
+        "R11",
+        0.326
+      ],
+      [
+        "R12",
+        0.326
+      ]
+    ]
+  },
+  {
+    "rank":30,
+    "module_id":"models\/bpn.py::BPNClassifier._fit_numpy",
+    "defect_probability":0.6852628589,
+    "predicted_defective":true,
+    "risk_score":74.2079126646,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3005841308,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 68.5% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.301
+      ],
+      [
+        "R02",
+        0.301
+      ],
+      [
+        "R05",
+        0.301
+      ],
+      [
+        "R06",
+        0.301
+      ],
+      [
+        "R08",
+        0.301
+      ],
+      [
+        "R09",
+        0.301
+      ],
+      [
+        "R11",
+        0.301
+      ],
+      [
+        "R12",
+        0.301
+      ]
+    ]
+  },
+  {
+    "rank":31,
+    "module_id":"data\/loader.py::detect_target_column",
+    "defect_probability":0.6820278168,
+    "predicted_defective":true,
+    "risk_score":74.1666551565,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.2933951484,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 68.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.293
+      ],
+      [
+        "R02",
+        0.293
+      ],
+      [
+        "R05",
+        0.293
+      ],
+      [
+        "R12",
+        0.293
+      ],
+      [
+        "R06",
+        0.217
+      ],
+      [
+        "R09",
+        0.217
+      ]
+    ]
+  },
+  {
+    "rank":32,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine.fit",
+    "defect_probability":0.3132860065,
+    "predicted_defective":true,
+    "risk_score":68.4438570767,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3776200215,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 31.3% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.378
+      ],
+      [
+        "R02",
+        0.378
+      ],
+      [
+        "R09",
+        0.378
+      ],
+      [
+        "R12",
+        0.378
+      ],
+      [
+        "R15",
+        0.105
+      ],
+      [
+        "R08",
+        0.053
+      ]
+    ]
+  },
+  {
+    "rank":33,
+    "module_id":"data\/imbalance.py::_random_oversample",
+    "defect_probability":0.2618238628,
+    "predicted_defective":false,
+    "risk_score":67.7474693957,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.2060795426,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 26.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.206
+      ]
+    ]
+  },
+  {
+    "rank":34,
+    "module_id":"fuzzy\/membership.py::triangular",
+    "defect_probability":0.4078336358,
+    "predicted_defective":true,
+    "risk_score":67.6729548775,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.1434216808,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 40.8% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.143
+      ]
+    ]
+  },
+  {
+    "rank":35,
+    "module_id":"cli\/main.py::build_parser",
+    "defect_probability":0.2371959835,
+    "predicted_defective":false,
+    "risk_score":67.6536053534,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.1239866118,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 23.7% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.124
+      ]
+    ]
+  },
+  {
+    "rank":36,
+    "module_id":"models\/bpn.py::_class_weights",
+    "defect_probability":0.4133634865,
+    "predicted_defective":true,
+    "risk_score":67.602317043,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.0855335057,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 41.3% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.086
+      ]
+    ]
+  },
+  {
+    "rank":37,
+    "module_id":"evaluation\/cv.py::fit_ensemble",
+    "defect_probability":0.2215090245,
+    "predicted_defective":false,
+    "risk_score":67.5917779252,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.0716967483,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 22.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.072
+      ]
+    ]
+  },
+  {
+    "rank":38,
+    "module_id":"models\/ensemble.py::BPNRFEnsemble.predict_proba",
+    "defect_probability":0.399828285,
+    "predicted_defective":true,
+    "risk_score":67.5704906476,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.0489701573,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 40.0% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.049
+      ]
+    ]
+  },
+  {
+    "rank":39,
+    "module_id":"models\/bpn.py::_best_f1_threshold",
+    "defect_probability":0.5283083916,
+    "predicted_defective":true,
+    "risk_score":64.8419101708,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 52.8% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.667
+      ],
+      [
+        "R12",
+        0.667
+      ],
+      [
+        "R01",
+        0.568
+      ],
+      [
+        "R09",
+        0.466
+      ],
+      [
+        "R10",
+        0.333
+      ]
+    ]
+  },
+  {
+    "rank":40,
+    "module_id":"utils\/config.py::load_config",
+    "defect_probability":0.7102134228,
+    "predicted_defective":true,
+    "risk_score":64.6029683118,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.3333333333,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 71.0% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R05",
+        0.333
+      ],
+      [
+        "R10",
+        0.159
+      ],
+      [
+        "R12",
+        0.14
+      ],
+      [
+        "R01",
+        0.021
+      ]
+    ]
+  },
+  {
+    "rank":41,
+    "module_id":"data\/columns.py::canonicalize_nasa_columns",
+    "defect_probability":0.4904307127,
+    "predicted_defective":true,
+    "risk_score":64.3819604194,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 49.0% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.667
+      ],
+      [
+        "R12",
+        0.466
+      ],
+      [
+        "R10",
+        0.333
+      ],
+      [
+        "R01",
+        0.078
+      ]
+    ]
+  },
+  {
+    "rank":42,
+    "module_id":"data\/validator.py::validate_target",
+    "defect_probability":0.4589571953,
+    "predicted_defective":true,
+    "risk_score":63.1445465949,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 45.9% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.667
+      ],
+      [
+        "R10",
+        0.333
+      ],
+      [
+        "R12",
+        0.15
+      ],
+      [
+        "R01",
+        0.045
+      ],
+      [
+        "R09",
+        0.037
+      ]
+    ]
+  },
+  {
+    "rank":43,
+    "module_id":"data\/cleaner.py::_is_identifier",
+    "defect_probability":0.5784354806,
+    "predicted_defective":true,
+    "risk_score":62.6075402609,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 57.8% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.667
+      ],
+      [
+        "R10",
+        0.333
+      ],
+      [
+        "R05",
+        0.063
+      ]
+    ]
+  },
+  {
+    "rank":44,
+    "module_id":"data\/loader.py::list_datasets",
+    "defect_probability":0.488842994,
+    "predicted_defective":true,
+    "risk_score":62.6075402609,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 48.9% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.667
+      ],
+      [
+        "R10",
+        0.333
+      ]
+    ]
+  },
+  {
+    "rank":45,
+    "module_id":"pipeline\/artifacts.py::_resolve_run_dir",
+    "defect_probability":0.695527494,
+    "predicted_defective":true,
+    "risk_score":62.4818910624,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.323394431,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 69.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.323
+      ],
+      [
+        "R05",
+        0.323
+      ],
+      [
+        "R12",
+        0.323
+      ],
+      [
+        "R10",
+        0.218
+      ],
+      [
+        "R01",
+        0.163
+      ],
+      [
+        "R06",
+        0.06
+      ],
+      [
+        "R09",
+        0.06
+      ]
+    ]
+  },
+  {
+    "rank":46,
+    "module_id":"evaluation\/plots.py::plot_ga_fitness",
+    "defect_probability":0.2802010179,
+    "predicted_defective":true,
+    "risk_score":61.4188451449,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.2673367262,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 28.0% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.267
+      ],
+      [
+        "R02",
+        0.267
+      ],
+      [
+        "R09",
+        0.267
+      ],
+      [
+        "R15",
+        0.199
+      ],
+      [
+        "R08",
+        0.105
+      ]
+    ]
+  },
+  {
+    "rank":47,
+    "module_id":"models\/bpn.py::BPNClassifier.save_weights",
+    "defect_probability":0.3513820469,
+    "predicted_defective":true,
+    "risk_score":61.4161869433,
+    "risk_tier":"HIGH",
+    "top_rule":"R02",
+    "top_rule_text":"IF complexity IS HIGH AND branch IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS CRITICAL",
+    "top_rule_strength":0.5046068231,
+    "rationale":"Dense branching with high cyclomatic complexity increases untested path risk.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 35.1% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R02",
+        0.505
+      ],
+      [
+        "R10",
+        0.333
+      ],
+      [
+        "R03",
+        0.211
+      ],
+      [
+        "R08",
+        0.211
+      ],
+      [
+        "R01",
+        0.206
+      ],
+      [
+        "R09",
+        0.206
+      ]
+    ]
+  },
+  {
+    "rank":48,
+    "module_id":"evaluation\/cv.py::_select",
+    "defect_probability":0.2914019227,
+    "predicted_defective":true,
+    "risk_score":59.2507969908,
+    "risk_tier":"HIGH",
+    "top_rule":"R01",
+    "top_rule_text":"IF complexity IS HIGH AND effort IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3046730757,
+    "rationale":"High McCabe complexity combined with high Halstead effort is associated with defect-prone modules.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 29.1% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R01",
+        0.305
+      ],
+      [
+        "R02",
+        0.305
+      ],
+      [
+        "R09",
+        0.305
+      ],
+      [
+        "R10",
+        0.305
+      ],
+      [
+        "R15",
+        0.167
+      ]
+    ]
+  },
+  {
+    "rank":49,
+    "module_id":"data\/cleaner.py::CleaningLog.lines",
+    "defect_probability":0.3119790256,
+    "predicted_defective":true,
+    "risk_score":58.5512918308,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.3732634187,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 31.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.373
+      ],
+      [
+        "R01",
+        0.333
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ],
+      [
+        "R09",
+        0.272
+      ],
+      [
+        "R15",
+        0.109
+      ]
+    ]
+  },
+  {
+    "rank":50,
+    "module_id":"models\/bpn.py::BPNClassifier.fit",
+    "defect_probability":0.2834728658,
+    "predicted_defective":true,
+    "risk_score":57.6181956066,
+    "risk_tier":"HIGH",
+    "top_rule":"R03",
+    "top_rule_text":"IF loc IS HIGH AND complexity IS MEDIUM THEN risk IS MEDIUM",
+    "top_rule_strength":0.3333333333,
+    "rationale":"Large modules with moderate complexity still require extra review effort.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 28.3% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R03",
+        0.333
+      ],
+      [
+        "R01",
+        0.278
+      ],
+      [
+        "R02",
+        0.278
+      ],
+      [
+        "R08",
+        0.278
+      ],
+      [
+        "R09",
+        0.278
+      ],
+      [
+        "R10",
+        0.278
+      ],
+      [
+        "R12",
+        0.278
+      ],
+      [
+        "R15",
+        0.19
+      ]
+    ]
+  },
+  {
+    "rank":51,
+    "module_id":"feature_selection\/ga_selector.py::_bpn_holdout_score",
+    "defect_probability":0.3756915927,
+    "predicted_defective":true,
+    "risk_score":57.6048917733,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.5856386423,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 37.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.586
+      ],
+      [
+        "R10",
+        0.586
+      ],
+      [
+        "R01",
+        0.333
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.279
+      ],
+      [
+        "R03",
+        0.053
+      ],
+      [
+        "R08",
+        0.053
+      ]
+    ]
+  },
+  {
+    "rank":52,
+    "module_id":"pipeline\/artifacts.py::save_run",
+    "defect_probability":0.3943232894,
+    "predicted_defective":true,
+    "risk_score":57.4201651835,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.647744298,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 39.4% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.648
+      ],
+      [
+        "R10",
+        0.648
+      ],
+      [
+        "R03",
+        0.421
+      ],
+      [
+        "R01",
+        0.333
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R08",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ]
+    ]
+  },
+  {
+    "rank":53,
+    "module_id":"utils\/config.py::AppConfig.get",
+    "defect_probability":0.6262270212,
+    "predicted_defective":true,
+    "risk_score":56.5607630233,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.4950919151,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 62.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.495
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ],
+      [
+        "R05",
+        0.169
+      ]
+    ]
+  },
+  {
+    "rank":54,
+    "module_id":"ui\/charts.py::convergence_chart",
+    "defect_probability":0.3406529725,
+    "predicted_defective":true,
+    "risk_score":56.20759188,
+    "risk_tier":"HIGH",
+    "top_rule":"R03",
+    "top_rule_text":"IF loc IS HIGH AND complexity IS MEDIUM THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Large modules with moderate complexity still require extra review effort.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 34.1% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R03",
+        0.667
+      ],
+      [
+        "R09",
+        0.469
+      ],
+      [
+        "R10",
+        0.469
+      ],
+      [
+        "R01",
+        0.333
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R08",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ],
+      [
+        "R15",
+        0.027
+      ]
+    ]
+  },
+  {
+    "rank":55,
+    "module_id":"data\/feature_map.py::resolve_column",
+    "defect_probability":0.5585296154,
+    "predicted_defective":true,
+    "risk_score":54.901266007,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 55.9% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ]
+    ]
+  },
+  {
+    "rank":56,
+    "module_id":"data\/preprocessing.py::FittedPreprocessor.transform",
+    "defect_probability":0.5251532793,
+    "predicted_defective":true,
+    "risk_score":54.901266007,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 52.5% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ],
+      [
+        "R01",
+        0.11
+      ]
+    ]
+  },
+  {
+    "rank":57,
+    "module_id":"utils\/config.py::_deep_merge",
+    "defect_probability":0.5157417059,
+    "predicted_defective":true,
+    "risk_score":54.901266007,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 51.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.333
+      ],
+      [
+        "R01",
+        0.099
+      ]
+    ]
+  },
+  {
+    "rank":58,
+    "module_id":"ui\/layout.py::render_sidebar",
+    "defect_probability":0.3968980014,
+    "predicted_defective":true,
+    "risk_score":54.901266007,
+    "risk_tier":"HIGH",
+    "top_rule":"R03",
+    "top_rule_text":"IF loc IS HIGH AND complexity IS MEDIUM THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Large modules with moderate complexity still require extra review effort.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 39.7% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R03",
+        0.667
+      ],
+      [
+        "R10",
+        0.656
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R08",
+        0.333
+      ],
+      [
+        "R01",
+        0.315
+      ],
+      [
+        "R09",
+        0.315
+      ],
+      [
+        "R12",
+        0.181
+      ]
+    ]
+  },
+  {
+    "rank":59,
+    "module_id":"fuzzy\/risk_engine.py::_rule_strength",
+    "defect_probability":0.5079059601,
+    "predicted_defective":true,
+    "risk_score":53.6604452052,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 50.8% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.227
+      ],
+      [
+        "R01",
+        0.021
+      ]
+    ]
+  },
+  {
+    "rank":60,
+    "module_id":"explainability\/explainer.py::ga_feature_ranks",
+    "defect_probability":0.4463292658,
+    "predicted_defective":true,
+    "risk_score":53.5549867654,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 44.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R01",
+        0.218
+      ],
+      [
+        "R09",
+        0.218
+      ],
+      [
+        "R12",
+        0.193
+      ]
+    ]
+  },
+  {
+    "rank":61,
+    "module_id":"evaluation\/plots.py::plot_feature_frequency",
+    "defect_probability":0.3371691108,
+    "predicted_defective":true,
+    "risk_score":53.0347411739,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.4572303692,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 33.7% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.457
+      ],
+      [
+        "R10",
+        0.457
+      ]
+    ]
+  },
+  {
+    "rank":62,
+    "module_id":"models\/ensemble.py::BPNRFEnsemble.fit_weight",
+    "defect_probability":0.3319422901,
+    "predicted_defective":true,
+    "risk_score":53.0161692043,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.4398076336,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 33.2% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.44
+      ],
+      [
+        "R10",
+        0.44
+      ]
+    ]
+  },
+  {
+    "rank":63,
+    "module_id":"pipeline\/trainer.py::_oof_bpn_probs",
+    "defect_probability":0.3939679563,
+    "predicted_defective":true,
+    "risk_score":52.9941255009,
+    "risk_tier":"HIGH",
+    "top_rule":"R03",
+    "top_rule_text":"IF loc IS HIGH AND complexity IS MEDIUM THEN risk IS MEDIUM",
+    "top_rule_strength":0.6842105263,
+    "rationale":"Large modules with moderate complexity still require extra review effort.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 39.4% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R03",
+        0.684
+      ],
+      [
+        "R09",
+        0.647
+      ],
+      [
+        "R10",
+        0.647
+      ]
+    ]
+  },
+  {
+    "rank":64,
+    "module_id":"fuzzy\/ga_tuner.py::triangles_valid",
+    "defect_probability":0.5299834609,
+    "predicted_defective":true,
+    "risk_score":52.930003065,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 53.0% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.163
+      ]
+    ]
+  },
+  {
+    "rank":65,
+    "module_id":"ui\/charts.py::roc_chart",
+    "defect_probability":0.3045017421,
+    "predicted_defective":true,
+    "risk_score":52.9193978234,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.3483391404,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 30.5% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.348
+      ],
+      [
+        "R10",
+        0.348
+      ]
+    ]
+  },
+  {
+    "rank":66,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine.from_dict",
+    "defect_probability":0.4890530407,
+    "predicted_defective":true,
+    "risk_score":52.7451896036,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 48.9% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R12",
+        0.146
+      ],
+      [
+        "R01",
+        0.07
+      ],
+      [
+        "R09",
+        0.07
+      ]
+    ]
+  },
+  {
+    "rank":67,
+    "module_id":"ui\/charts.py::correlation_heatmap",
+    "defect_probability":0.2461631745,
+    "predicted_defective":false,
+    "risk_score":52.689976756,
+    "risk_tier":"HIGH",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.1538772484,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 24.6% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.154
+      ],
+      [
+        "R10",
+        0.154
+      ]
+    ]
+  },
+  {
+    "rank":68,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine._severity",
+    "defect_probability":0.5970084667,
+    "predicted_defective":true,
+    "risk_score":51.6683676614,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6119661331,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 59.7% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.612
+      ],
+      [
+        "R02",
+        0.333
+      ],
+      [
+        "R05",
+        0.104
+      ]
+    ]
+  },
+  {
+    "rank":69,
+    "module_id":"feature_selection\/ga_selector.py::_ensure_creator",
+    "defect_probability":0.4884942472,
+    "predicted_defective":true,
+    "risk_score":51.2526761612,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 48.8% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ]
+    ]
+  },
+  {
+    "rank":70,
+    "module_id":"fuzzy\/ga_tuner.py::_ensure_creator",
+    "defect_probability":0.4884942472,
+    "predicted_defective":true,
+    "risk_score":51.2526761612,
+    "risk_tier":"HIGH",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6666666667,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Prioritize this module for manual testing and code review. Predicted defect probability is 48.8% with HIGH derived risk severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.667
+      ],
+      [
+        "R02",
+        0.333
+      ]
+    ]
+  },
+  {
+    "rank":71,
+    "module_id":"models\/bpn.py::BPNClassifier.predict_proba",
+    "defect_probability":0.3880105317,
+    "predicted_defective":true,
+    "risk_score":48.5006049507,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6267017722,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.627
+      ],
+      [
+        "R09",
+        0.282
+      ]
+    ]
+  },
+  {
+    "rank":72,
+    "module_id":"ui\/charts.py::risk_bars",
+    "defect_probability":0.3032406569,
+    "predicted_defective":true,
+    "risk_score":47.8646168874,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.3441355228,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.344
+      ],
+      [
+        "R09",
+        0.167
+      ]
+    ]
+  },
+  {
+    "rank":73,
+    "module_id":"cli\/main.py::_cmd_train_shared",
+    "defect_probability":0.4062564671,
+    "predicted_defective":true,
+    "risk_score":45.2646814281,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R09",
+    "top_rule_text":"IF effort IS HIGH AND volume IS HIGH AND defect_prob IS AT_LEAST_POSSIBLE THEN risk IS HIGH",
+    "top_rule_strength":0.687521557,
+    "rationale":"High Halstead effort and volume indicate computationally dense, error-prone code.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R09",
+        0.688
+      ],
+      [
+        "R03",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":74,
+    "module_id":"pipeline\/artifacts.py::new_run_dir",
+    "defect_probability":0.5842972398,
+    "predicted_defective":true,
+    "risk_score":42.3227396941,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6628110409,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.663
+      ],
+      [
+        "R09",
+        0.086
+      ],
+      [
+        "R06",
+        0.076
+      ]
+    ]
+  },
+  {
+    "rank":75,
+    "module_id":"fuzzy\/risk_engine.py::_centroid",
+    "defect_probability":0.5209375024,
+    "predicted_defective":true,
+    "risk_score":42.0425171718,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.9162499905,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.916
+      ],
+      [
+        "R09",
+        0.086
+      ]
+    ]
+  },
+  {
+    "rank":76,
+    "module_id":"utils\/reproducibility.py::set_seed",
+    "defect_probability":0.5156413317,
+    "predicted_defective":true,
+    "risk_score":40.0543312135,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.9374346733,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.937
+      ],
+      [
+        "R09",
+        0.037
+      ]
+    ]
+  },
+  {
+    "rank":77,
+    "module_id":"explainability\/explainer.py::ablation_contributions",
+    "defect_probability":0.3288734257,
+    "predicted_defective":true,
+    "risk_score":39.8217334811,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R14",
+    "top_rule_text":"IF branch IS LOW AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Few branches and low complexity reduce the chance of untested defective paths.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R10",
+        0.43
+      ],
+      [
+        "R09",
+        0.316
+      ],
+      [
+        "R07",
+        0.06
+      ],
+      [
+        "R13",
+        0.06
+      ]
+    ]
+  },
+  {
+    "rank":78,
+    "module_id":"evaluation\/testing_budget.py::testing_budget_table",
+    "defect_probability":0.2936670184,
+    "predicted_defective":true,
+    "risk_score":38.4355657199,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R03",
+    "top_rule_text":"IF loc IS HIGH AND complexity IS MEDIUM THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Large modules with moderate complexity still require extra review effort.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R03",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R10",
+        0.312
+      ],
+      [
+        "R09",
+        0.265
+      ],
+      [
+        "R07",
+        0.161
+      ]
+    ]
+  },
+  {
+    "rank":79,
+    "module_id":"data\/preprocessing.py::fit_preprocessor",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3332112105,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9967029255,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.997
+      ]
+    ]
+  },
+  {
+    "rank":80,
+    "module_id":"fuzzy\/ga_tuner.py::decode_unit_genes",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3332112105,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9967029255,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.997
+      ]
+    ]
+  },
+  {
+    "rank":81,
+    "module_id":"fuzzy\/ga_tuner.py::fuzzy_agreement_metrics",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3332112105,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9967029255,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.997
+      ]
+    ]
+  },
+  {
+    "rank":82,
+    "module_id":"fuzzy\/membership.py::quantile_triangles",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3332112105,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9967029255,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.997
+      ]
+    ]
+  },
+  {
+    "rank":83,
+    "module_id":"fuzzy\/risk_engine.py::_recommendation",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3332112105,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9967029255,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.997
+      ]
+    ]
+  },
+  {
+    "rank":84,
+    "module_id":"ui\/pages\/predictions.py::_render_shap",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3332112105,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9967029255,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.997
+      ]
+    ]
+  },
+  {
+    "rank":85,
+    "module_id":"data\/loader.py::load_dataset",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3327803583,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9850746269,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.985
+      ]
+    ]
+  },
+  {
+    "rank":86,
+    "module_id":"scanner\/radon_scanner.py::_halstead_row",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3317372257,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9701492537,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.97
+      ]
+    ]
+  },
+  {
+    "rank":87,
+    "module_id":"ui\/pages\/explainability.py::render",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3317372257,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9701492537,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.97
+      ]
+    ]
+  },
+  {
+    "rank":88,
+    "module_id":"pipeline\/predictor.py::predict_from_raw_row",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3300027088,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9552238806,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.955
+      ]
+    ]
+  },
+  {
+    "rank":89,
+    "module_id":"ui\/pages\/scan_predict.py::render",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3300027088,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.9552238806,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.955
+      ]
+    ]
+  },
+  {
+    "rank":90,
+    "module_id":"evaluation\/metrics.py::_safe_auc",
+    "defect_probability":0.485234499,
+    "predicted_defective":true,
+    "risk_score":38.3294406059,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.9507816633,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.951
+      ]
+    ]
+  },
+  {
+    "rank":91,
+    "module_id":"ui\/components.py::inject_css",
+    "defect_probability":0.51949507,
+    "predicted_defective":true,
+    "risk_score":38.323835779,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.9220197201,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.922
+      ]
+    ]
+  },
+  {
+    "rank":92,
+    "module_id":"feature_selection\/pso_selector.py::PSOFeatureSelector.fit",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3167412848,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.8955223881,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.896
+      ]
+    ]
+  },
+  {
+    "rank":93,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine.assess",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.3167412848,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.8955223881,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.896
+      ]
+    ]
+  },
+  {
+    "rank":94,
+    "module_id":"pipeline\/predictor.py::recent_predictions",
+    "defect_probability":0.5408402085,
+    "predicted_defective":true,
+    "risk_score":38.2948282419,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.8366391659,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.837
+      ]
+    ]
+  },
+  {
+    "rank":95,
+    "module_id":"ui\/pages\/predictions.py::render",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.2878031897,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.8208955224,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.821
+      ]
+    ]
+  },
+  {
+    "rank":96,
+    "module_id":"cli\/main.py::main",
+    "defect_probability":0.5475404859,
+    "predicted_defective":true,
+    "risk_score":38.2824913109,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.8098380566,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.81
+      ]
+    ]
+  },
+  {
+    "rank":97,
+    "module_id":"data\/loader.py::_read_table",
+    "defect_probability":0.548268795,
+    "predicted_defective":true,
+    "risk_score":38.2810993368,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.8069248199,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.807
+      ]
+    ]
+  },
+  {
+    "rank":98,
+    "module_id":"data\/quality.py::build_quality_report",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.2806424928,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.8059701493,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.806
+      ]
+    ]
+  },
+  {
+    "rank":99,
+    "module_id":"feature_selection\/ga_selector.py::GAFeatureSelector.fit",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.2806424928,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.8059701493,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.806
+      ]
+    ]
+  },
+  {
+    "rank":100,
+    "module_id":"fuzzy\/ga_tuner.py::FuzzyMembershipGA.fit",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.2729448491,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.7910447761,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.791
+      ]
+    ]
+  },
+  {
+    "rank":101,
+    "module_id":"pipeline\/predictor.py::predict_module",
+    "defect_probability":0.5599096417,
+    "predicted_defective":true,
+    "risk_score":38.2556760886,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.760361433,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.76
+      ]
+    ]
+  },
+  {
+    "rank":102,
+    "module_id":"pipeline\/trainer.py::train_pipeline",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":38.2189258079,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.7014925373,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.701
+      ]
+    ]
+  },
+  {
+    "rank":103,
+    "module_id":"pipeline\/trainer.py::_display_ids",
+    "defect_probability":0.5854315758,
+    "predicted_defective":true,
+    "risk_score":38.1878134317,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6582736969,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.658
+      ]
+    ]
+  },
+  {
+    "rank":104,
+    "module_id":"pipeline\/predictor.py::_to_float",
+    "defect_probability":0.5909964442,
+    "predicted_defective":true,
+    "risk_score":38.1710319239,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.6360142231,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.636
+      ]
+    ]
+  },
+  {
+    "rank":105,
+    "module_id":"data\/feature_map.py::map_fuzzy_inputs",
+    "defect_probability":0.6200107932,
+    "predicted_defective":true,
+    "risk_score":38.0731652983,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5199568272,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.52
+      ]
+    ]
+  },
+  {
+    "rank":106,
+    "module_id":"data\/feature_map.py::normalize",
+    "defect_probability":0.3269685805,
+    "predicted_defective":true,
+    "risk_score":37.981880692,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.4232286016,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.423
+      ]
+    ]
+  },
+  {
+    "rank":107,
+    "module_id":"evaluation\/metrics.py::classification_metrics",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":37.8884776955,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.3333333333,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.333
+      ],
+      [
+        "R03",
+        0.211
+      ]
+    ]
+  },
+  {
+    "rank":108,
+    "module_id":"ui\/pages\/settings.py::render",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":37.8884776955,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R15",
+    "top_rule_text":"IF complexity IS HIGH AND defect_prob IS UNLIKELY THEN risk IS MEDIUM",
+    "top_rule_strength":0.3333333333,
+    "rationale":"Complex code the neural model does not flag still deserves a scheduled review, not escalation.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R15",
+        0.333
+      ],
+      [
+        "R03",
+        0.158
+      ]
+    ]
+  },
+  {
+    "rank":109,
+    "module_id":"data\/splitting.py::stratified_split",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":37.8691850874,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R03",
+    "top_rule_text":"IF loc IS HIGH AND complexity IS MEDIUM THEN risk IS MEDIUM",
+    "top_rule_strength":0.3157894737,
+    "rationale":"Large modules with moderate complexity still require extra review effort.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R03",
+        0.316
+      ]
+    ]
+  },
+  {
+    "rank":110,
+    "module_id":"ui\/components.py::section",
+    "defect_probability":0.7105188966,
+    "predicted_defective":true,
+    "risk_score":37.6891583664,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.1579244137,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.158
+      ]
+    ]
+  },
+  {
+    "rank":111,
+    "module_id":"models\/bpn.py::_softmax",
+    "defect_probability":0.3492644727,
+    "predicted_defective":true,
+    "risk_score":37.5313966496,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R14",
+    "top_rule_text":"IF branch IS LOW AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Few branches and low complexity reduce the chance of untested defective paths.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R10",
+        0.498
+      ],
+      [
+        "R09",
+        0.234
+      ]
+    ]
+  },
+  {
+    "rank":112,
+    "module_id":"ui\/charts.py::probability_donut",
+    "defect_probability":0.3726655245,
+    "predicted_defective":true,
+    "risk_score":37.4829929534,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R03",
+        0.474
+      ],
+      [
+        "R09",
+        0.232
+      ]
+    ]
+  },
+  {
+    "rank":113,
+    "module_id":"cli\/main.py::_cmd_scan",
+    "defect_probability":0.4814423919,
+    "predicted_defective":true,
+    "risk_score":34.9524230283,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R09",
+        0.155
+      ]
+    ]
+  },
+  {
+    "rank":114,
+    "module_id":"ui\/charts.py::membership_chart",
+    "defect_probability":0.3032406569,
+    "predicted_defective":true,
+    "risk_score":34.9010872911,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R14",
+    "top_rule_text":"IF branch IS LOW AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Few branches and low complexity reduce the chance of untested defective paths.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R10",
+        0.344
+      ],
+      [
+        "R09",
+        0.167
+      ],
+      [
+        "R07",
+        0.134
+      ],
+      [
+        "R13",
+        0.134
+      ]
+    ]
+  },
+  {
+    "rank":115,
+    "module_id":"evaluation\/testing_budget.py::defect_recall_at_budget",
+    "defect_probability":0.4628791809,
+    "predicted_defective":true,
+    "risk_score":33.9636171907,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R09",
+        0.129
+      ]
+    ]
+  },
+  {
+    "rank":116,
+    "module_id":"fuzzy\/rules.py::FuzzyRule.describe",
+    "defect_probability":0.6034736037,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":117,
+    "module_id":"ui\/components.py::card_open",
+    "defect_probability":0.5627453923,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":118,
+    "module_id":"fuzzy\/risk_engine.py::_risk_vec",
+    "defect_probability":0.5602970123,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":119,
+    "module_id":"ui\/pages\/dashboard.py::_risk_counts",
+    "defect_probability":0.5568907857,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R04",
+        0.302
+      ]
+    ]
+  },
+  {
+    "rank":120,
+    "module_id":"evaluation\/validation.py::assert_no_test_in_train",
+    "defect_probability":0.5520378351,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":121,
+    "module_id":"utils\/config.py::AppConfig.training",
+    "defect_probability":0.5029304624,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":122,
+    "module_id":"utils\/config.py::AppConfig.ga",
+    "defect_probability":0.5029304624,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":123,
+    "module_id":"fuzzy\/risk_engine.py::_tri_vec",
+    "defect_probability":0.4856550395,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":124,
+    "module_id":"scanner\/radon_scanner.py::_empty_halstead",
+    "defect_probability":0.4559161365,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":125,
+    "module_id":"explainability\/shap_explainer.py::sample_background",
+    "defect_probability":0.4326819479,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R04",
+        0.084
+      ]
+    ]
+  },
+  {
+    "rank":126,
+    "module_id":"feature_selection\/ga_selector.py::subset_score",
+    "defect_probability":0.4118226767,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":127,
+    "module_id":"utils\/logging.py::get_logger",
+    "defect_probability":0.4095902741,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R04",
+    "top_rule_text":"IF complexity IS LOW AND effort IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Small, simple modules historically have lower defect density.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R04",
+        0.5
+      ],
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":128,
+    "module_id":"evaluation\/metrics.py::roc_points",
+    "defect_probability":0.3900596797,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R04",
+        0.036
+      ]
+    ]
+  },
+  {
+    "rank":129,
+    "module_id":"evaluation\/comparison.py::metrics_table",
+    "defect_probability":0.3854996264,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R04",
+        0.067
+      ]
+    ]
+  },
+  {
+    "rank":130,
+    "module_id":"ui\/charts.py::grouped_metrics",
+    "defect_probability":0.3517099917,
+    "predicted_defective":true,
+    "risk_score":28.0430846282,
+    "risk_tier":"MEDIUM",
+    "top_rule":"R10",
+    "top_rule_text":"IF complexity IS MEDIUM AND defect_prob IS POSSIBLE THEN risk IS MEDIUM",
+    "top_rule_strength":0.5,
+    "rationale":"Uncertain neural output with moderate complexity is treated as medium testing priority.",
+    "recommendation":"Schedule a targeted review of the highlighted metrics. Derived risk is medium \u2014 not ground-truth bug severity.",
+    "fired_rules":[
+      [
+        "R10",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R04",
+        0.196
+      ]
+    ]
+  },
+  {
+    "rank":131,
+    "module_id":"explainability\/explainer.py::explain_prediction",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":11.7958801498,
+    "risk_tier":"LOW",
+    "top_rule":"R07",
+    "top_rule_text":"IF defect_prob IS UNLIKELY AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Low predicted probability and low complexity jointly support a low risk assessment.",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+      [
+        "R07",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R13",
+        0.2
+      ]
+    ]
+  },
+  {
+    "rank":132,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine.__init__",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":11.7958801498,
+    "risk_tier":"LOW",
+    "top_rule":"R07",
+    "top_rule_text":"IF defect_prob IS UNLIKELY AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Low predicted probability and low complexity jointly support a low risk assessment.",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+      [
+        "R07",
+        0.5
+      ],
+      [
+        "R13",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":133,
+    "module_id":"pipeline\/inference.py::load_model",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":11.7958801498,
+    "risk_tier":"LOW",
+    "top_rule":"R07",
+    "top_rule_text":"IF defect_prob IS UNLIKELY AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Low predicted probability and low complexity jointly support a low risk assessment.",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+      [
+        "R07",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ],
+      [
+        "R13",
+        0.4
+      ]
+    ]
+  },
+  {
+    "rank":134,
+    "module_id":"ui\/components.py::kpi_card",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":11.7958801498,
+    "risk_tier":"LOW",
+    "top_rule":"R07",
+    "top_rule_text":"IF defect_prob IS UNLIKELY AND complexity IS LOW THEN risk IS LOW",
+    "top_rule_strength":0.5,
+    "rationale":"Low predicted probability and low complexity jointly support a low risk assessment.",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+      [
+        "R07",
+        0.5
+      ],
+      [
+        "R13",
+        0.5
+      ],
+      [
+        "R14",
+        0.5
+      ]
+    ]
+  },
+  {
+    "rank":135,
+    "module_id":"feature_selection\/base.py::FeatureSelector.fit",
+    "defect_probability":0.5268145204,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 52.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":136,
+    "module_id":"ui\/components.py::html",
+    "defect_probability":0.508784771,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 50.9%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":137,
+    "module_id":"data\/imbalance.py::class_counts",
+    "defect_probability":0.434850812,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 43.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":138,
+    "module_id":"models\/bpn.py::BPNClassifier._numpy_proba",
+    "defect_probability":0.4302319586,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 43.0%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":139,
+    "module_id":"models\/bpn.py::_threshold_grid",
+    "defect_probability":0.4062847793,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 40.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":140,
+    "module_id":"ui\/charts.py::apply_layout",
+    "defect_probability":0.4052450955,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 40.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":141,
+    "module_id":"evaluation\/cv.py::prepare_xy",
+    "defect_probability":0.3656579256,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 36.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":142,
+    "module_id":"utils\/config.py::AppConfig.smote",
+    "defect_probability":0.3370637596,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 33.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":143,
+    "module_id":"utils\/config.py::AppConfig.fuzzy",
+    "defect_probability":0.3370637596,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 33.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":144,
+    "module_id":"utils\/config.py::AppConfig.dataset",
+    "defect_probability":0.3370637596,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 33.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":145,
+    "module_id":"utils\/config.py::AppConfig.ui",
+    "defect_probability":0.3370637596,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 33.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":146,
+    "module_id":"utils\/config.py::AppConfig.with_overrides",
+    "defect_probability":0.3359823227,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 33.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":147,
+    "module_id":"evaluation\/validation.py::scaler_fit_on_train_only",
+    "defect_probability":0.3328725994,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 33.3%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":148,
+    "module_id":"models\/ensemble.py::BPNRFEnsemble.predict",
+    "defect_probability":0.318428278,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 31.8%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":149,
+    "module_id":"explainability\/shap_explainer.py::expected_value",
+    "defect_probability":0.3115868568,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 31.2%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":150,
+    "module_id":"models\/bpn.py::BPNClassifier.predict",
+    "defect_probability":0.3083019555,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 30.8%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":151,
+    "module_id":"ui\/charts.py::loss_chart",
+    "defect_probability":0.2917280197,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 29.2%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":152,
+    "module_id":"ui\/components.py::risk_chip",
+    "defect_probability":0.2873369157,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 28.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":153,
+    "module_id":"pipeline\/inference.py::explain_row",
+    "defect_probability":0.283331424,
+    "predicted_defective":true,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 28.3%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":154,
+    "module_id":"evaluation\/metrics.py::confusion_counts",
+    "defect_probability":0.2708335817,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 27.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":155,
+    "module_id":"ui\/charts.py::donut",
+    "defect_probability":0.2665051818,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 26.7%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":156,
+    "module_id":"pipeline\/inference.py::scaled_selected_row",
+    "defect_probability":0.2442691475,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 24.4%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":157,
+    "module_id":"ui\/charts.py::_layout",
+    "defect_probability":0.1890503317,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 18.9%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":158,
+    "module_id":"explainability\/explainer.py::prediction_confidence",
+    "defect_probability":0.1886802167,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 18.9%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":159,
+    "module_id":"data\/preprocessing.py::to_numpy",
+    "defect_probability":0.1843324006,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 18.4%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":160,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine.available_concepts",
+    "defect_probability":0.1843239963,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 18.4%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":161,
+    "module_id":"models\/bpn.py::BPNClassifier.__init__",
+    "defect_probability":0.1759057939,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 17.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":162,
+    "module_id":"feature_selection\/ga_selector.py::GAFeatureSelector.__init__",
+    "defect_probability":0.1723629236,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 17.2%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":163,
+    "module_id":"pipeline\/artifacts.py::json_ready",
+    "defect_probability":0.1439972818,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 14.4%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":164,
+    "module_id":"fuzzy\/ga_tuner.py::FuzzyMembershipGA.__init__",
+    "defect_probability":0.1254169941,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 12.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":165,
+    "module_id":"feature_selection\/pso_selector.py::PSOFeatureSelector.__init__",
+    "defect_probability":0.1151910052,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 11.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":166,
+    "module_id":"evaluation\/metrics.py::ClassificationMetrics.as_dict",
+    "defect_probability":0.0983053148,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.8%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":167,
+    "module_id":"utils\/logging.py::format_log_lines",
+    "defect_probability":0.0962594599,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":168,
+    "module_id":"data\/feature_map.py::display_name",
+    "defect_probability":0.0958326533,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":169,
+    "module_id":"models\/baselines.py::MajorityClassifier.__init__",
+    "defect_probability":0.0957428142,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":170,
+    "module_id":"pipeline\/inference.py::SavedModel.threshold",
+    "defect_probability":0.0946579278,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":171,
+    "module_id":"models\/bpn.py::_relu",
+    "defect_probability":0.092230849,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.2%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":172,
+    "module_id":"utils\/config.py::AppConfig.mode",
+    "defect_probability":0.0907102376,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 9.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":173,
+    "module_id":"models\/baselines.py::MajorityClassifier.fit",
+    "defect_probability":0.0884458274,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 8.8%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":174,
+    "module_id":"models\/ensemble.py::make_rf",
+    "defect_probability":0.0862650573,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 8.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":175,
+    "module_id":"models\/ensemble.py::BPNRFEnsemble.__init__",
+    "defect_probability":0.0700065121,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 7.0%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":176,
+    "module_id":"models\/bpn.py::_TorchBPN.forward",
+    "defect_probability":0.046129968,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 4.6%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":177,
+    "module_id":"models\/baselines.py::MajorityClassifier.predict",
+    "defect_probability":0.045051381,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 4.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":178,
+    "module_id":"models\/baselines.py::MajorityClassifier.predict_proba",
+    "defect_probability":0.045051381,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 4.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":179,
+    "module_id":"ui\/components.py::empty_note",
+    "defect_probability":0.0450210497,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 4.5%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":180,
+    "module_id":"ui\/components.py::card_close",
+    "defect_probability":0.0216255616,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 2.2%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":181,
+    "module_id":"feature_selection\/ga_selector.py::_progress_payload",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":182,
+    "module_id":"fuzzy\/risk_engine.py::FuzzyRiskEngine.to_dict",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":183,
+    "module_id":"fuzzy\/rules.py::default_rule_base",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":184,
+    "module_id":"models\/baselines.py::make_sklearn_baselines",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":185,
+    "module_id":"models\/bpn.py::_TorchBPN.__init__",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":186,
+    "module_id":"ui\/components.py::page_header",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  },
+  {
+    "rank":187,
+    "module_id":"ui\/components.py::plotly",
+    "defect_probability":0.0011539761,
+    "predicted_defective":false,
+    "risk_score":0.0,
+    "risk_tier":"LOW",
+    "top_rule":"",
+    "top_rule_text":"",
+    "top_rule_strength":0.0,
+    "rationale":"",
+    "recommendation":"Routine testing is sufficient based on low derived risk and a defect probability of 0.1%.",
+    "fired_rules":[
+
+    ]
+  }
+]

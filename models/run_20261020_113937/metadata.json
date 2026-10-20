@@ -1,0 +1,14 @@
+{
+  "dataset": "cm1",
+  "seed": 42,
+  "selected_features": [
+    "v",
+    "e",
+    "lOCode",
+    "lOComment",
+    "uniq_Opnd"
+  ],
+  "created": "2026-10-20T11:39:37",
+  "mode": "MVP",
+  "training_seconds": 3.9463537910050945
+}

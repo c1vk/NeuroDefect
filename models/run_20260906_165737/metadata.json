@@ -1,0 +1,15 @@
+{
+  "dataset": "NASA_CM1_sample",
+  "seed": 42,
+  "selected_features": [
+    "loc",
+    "iv(g)",
+    "i",
+    "e",
+    "b",
+    "branchCount"
+  ],
+  "created": "2026-09-06T16:57:37",
+  "mode": "MVP",
+  "training_seconds": 17.70328899996821
+}

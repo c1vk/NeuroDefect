@@ -1,0 +1,13 @@
+{
+  "dataset": "jm1",
+  "seed": 42,
+  "selected_features": [
+    "loc",
+    "lOCode",
+    "lOComment",
+    "uniq_Opnd"
+  ],
+  "created": "2026-10-20T13:16:48",
+  "mode": "MVP",
+  "training_seconds": 14.944686332994024
+}

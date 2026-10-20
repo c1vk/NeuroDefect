@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.cache/
+dist/
+build/
+.pytest_cache/
+.idea/
+.vscode/
+
+# Unpacked PowerPoint XML (keep the .pptx only)
+presentations/unpacked/
+
+*.egg-info/

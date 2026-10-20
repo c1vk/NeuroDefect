@@ -1,0 +1,13 @@
+{
+  "dataset": "cm1_shared",
+  "seed": 42,
+  "selected_features": [
+    "b",
+    "t",
+    "uniq_Op",
+    "total_Op"
+  ],
+  "created": "2026-10-14T22:39:16",
+  "mode": "MVP",
+  "training_seconds": 7.268813302012859
+}

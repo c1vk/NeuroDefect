@@ -1,0 +1,13 @@
+{
+  "dataset": "NASA_CM1_sample",
+  "seed": 42,
+  "selected_features": [
+    "v(g)",
+    "v",
+    "d",
+    "total_Op"
+  ],
+  "created": "2026-10-20T12:17:15",
+  "mode": "MVP",
+  "training_seconds": 10.155040416007978
+}
