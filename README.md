@@ -64,7 +64,17 @@ Real NASA PROMISE data (CM1, PC1, JM1) is in `data/raw/` (see `data/raw/README.m
 streamlit run app.py
 ```
 
-Pages: Dashboard (incl. **GA diagnostics**: fitness by generation, feature-selection frequency, saved ablation figures), Dataset Analysis, Model Training, Predictions, **Scan & Predict** (upload a scanner CSV, rank modules with the shared-subset model, read fired rules and recommendations), Model Comparison, Explainability, Settings.
+Pages: Dashboard (incl. **GA diagnostics**: fitness by generation, feature-selection frequency, saved ablation figures), Dataset Analysis, Model Training, Predictions, **Review code** (scan a Python folder, or upload a scanner CSV, and read the top functions with the fired rule), Model Comparison, Explainability, Settings.
+
+## Review a Python tree
+
+```bash
+neurodefect review src --top 10
+neurodefect review src --changed
+neurodefect review src --format md
+```
+
+Each row is `file:line`, the network's defective or clean call, a derived tier, and the fuzzy rule that fired. Severity is a testing priority, not a NASA bug label. Python scores are structural analogues of the NASA C/C++ metrics, not measured Python defects. The command exits 0 unless `--fail-on TIER` is set and that tier is present. `--top 0` prints every matched function.
 
 ## CLI
 
@@ -73,6 +83,8 @@ neurodefect scan src -o metrics.csv                      # or: python -m neurode
 neurodefect train-shared --dataset data/raw/cm1.csv      # -> models/shared/<name>_seed42 + latest.json
 neurodefect predict metrics.csv --top 20 --csv-out ranked.csv --json-out ranked.json
 ```
+
+`scan` and `predict` remain for a metrics CSV you already have. `predict` ranks by the network call, then by defect probability. The tier is printed beside that call.
 
 `scan` computes per-function metrics for Python code (radon for McCabe complexity and raw line counts; classical token-based Halstead counts by default, `--halstead radon` for radon's AST counts). Columns use NASA names:
 

@@ -92,6 +92,8 @@ def save_run(run_dir: Path, payload: dict[str, Any]) -> None:
         "mode": payload.get("mode"),
         "training_seconds": payload.get("duration"),
     }
+    if payload.get("feature_high"):
+        meta["feature_high"] = payload["feature_high"]
     (run_dir / "metadata.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
     latest = run_dir.parent / "latest.json"
     # Store the run directory relative to the models folder so the pointer is

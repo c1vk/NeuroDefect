@@ -66,6 +66,3 @@ research:
     epochs: 120
     patience: 16
 
-ui:
-  operator_name: Dr. Alan Vance
-  operator_id: LAB-RE_01

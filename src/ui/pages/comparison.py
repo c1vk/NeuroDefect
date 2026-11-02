@@ -9,6 +9,16 @@ from src.ui.charts import grouped_metrics, roc_chart
 from src.ui.components import empty_note, html, html_table, page_header, plotly, section
 
 
+def _role(name: str) -> str:
+    if name == "Neuro-Fuzzy-GA":
+        return "This system"
+    if name == "BPN":
+        return "Same network, all columns"
+    if name == "BPN+RF Ensemble":
+        return "Optional mix"
+    return "Control"
+
+
 def _leaders(metrics: dict, attr: str) -> str:
     """Best model on one metric. Majority is left out; predicting the common class is not a result."""
     scored = [
@@ -24,7 +34,7 @@ def _leaders(metrics: dict, attr: str) -> str:
 
 
 def render() -> None:
-    page_header("Neurodefect / Model Comparison", "One held-out split")
+    page_header("NeuroDefect / Model Comparison", "One held-out split")
     result = st.session_state.get("result")
     if result is None:
         empty_note(
@@ -32,6 +42,9 @@ def render() -> None:
         )
         return
 
+    st.caption(
+        "Controls are scored on this page. They are not used when a module is inspected."
+    )
     n_test = len(result.y_test)
     n_def = int(pd.Series(result.y_test).sum())
     n_train = len(result.split.y_train)
@@ -71,6 +84,7 @@ def render() -> None:
     with section("Performance Metric Benchmarks", key="cmp_metrics"):
         rows = [
             [
+                _role(str(row["Classifier Model Architecture"])),
                 row["Classifier Model Architecture"],
                 f"{row['Accuracy']:.3f}",
                 f"{row['Precision']:.3f}",
@@ -83,7 +97,7 @@ def render() -> None:
         ]
         html(
             html_table(
-                ["Classifier Model Architecture", "Accuracy", "Precision", "Recall", "F1-Score", "ROC-AUC", "Matthews CC"],
+                ["Role", "Classifier Model Architecture", "Accuracy", "Precision", "Recall", "F1-Score", "ROC-AUC", "Matthews CC"],
                 rows,
             )
         )

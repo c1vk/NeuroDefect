@@ -1,5 +1,6 @@
 """NeuroDefect command line interface.
 
+  neurodefect review <folder> [--top 10] [--changed] [--format text|md|sarif]
   neurodefect scan <folder> -o metrics.csv
   neurodefect train-shared --dataset data/raw/cm1.csv [--out models/shared]
   neurodefect predict metrics.csv [--model DIR] [--top 20] [--csv out.csv] [--json out.json]
@@ -59,6 +60,26 @@ def _cmd_train_shared(args) -> int:
     return 0
 
 
+def _cmd_review(args) -> int:
+    from src.review.formats import render
+    from src.review.report import review_path
+
+    report = review_path(
+        args.path,
+        model=args.model,
+        top=args.top,
+        changed_only=args.changed,
+        base=args.base,
+        halstead=args.halstead,
+    )
+    print(render(report, args.format), end="" if args.format == "sarif" else "\n")
+    if report.scanned_count == 0:
+        return 1
+    if args.fail_on and report.tier_counts.get(args.fail_on, 0):
+        return 1
+    return 0
+
+
 def _cmd_predict(args) -> int:
     import pandas as pd
 
@@ -96,7 +117,18 @@ def build_parser() -> argparse.ArgumentParser:
     t.add_argument("--seed", type=int, default=42)
     t.add_argument("--no-baselines", action="store_true")
     t.set_defaults(func=_cmd_train_shared)
-    q = sub.add_parser("predict", help="rank modules in a metrics CSV by fuzzy risk")
+    r = sub.add_parser("review", help="scan a Python tree and rank functions with the saved model")
+    r.add_argument("path")
+    r.add_argument("--top", type=int, default=10, help="rows to print; 0 prints every matched function")
+    r.add_argument("--changed", action="store_true", help="only functions touched since the base commit")
+    r.add_argument("--base", default="HEAD")
+    r.add_argument("--format", choices=["text", "md", "sarif"], default="text")
+    r.add_argument("--model", default=None, help="run dir or folder with latest.json (default models/shared)")
+    r.add_argument("--fail-on", dest="fail_on", choices=["CRITICAL", "HIGH", "MEDIUM", "LOW"], default=None,
+                   help="exit 1 when this derived tier is present; default is always 0 when functions were scanned")
+    r.add_argument("--halstead", choices=["token", "radon"], default="token")
+    r.set_defaults(func=_cmd_review)
+    q = sub.add_parser("predict", help="rank modules in a metrics CSV by the network call, then defect probability")
     q.add_argument("csv")
     q.add_argument("--model", default=None, help="run dir or folder with latest.json (default models/shared)")
     q.add_argument("--top", type=int, default=20)

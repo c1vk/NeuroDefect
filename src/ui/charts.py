@@ -63,6 +63,87 @@ def convergence_chart(
     return apply_layout(fig, height, margin=dict(l=36, r=16, t=12, b=48))
 
 
+def _axis_font() -> dict:
+    return dict(family="Inter, Segoe UI, sans-serif", color="#0f172a", size=13)
+
+
+def ga_fitness_chart(history: list[float] | None, fuzzy_history: list[float] | None = None) -> go.Figure:
+    """Fitness by generation. Margins keep the 0.xx ticks and the axis titles inside the card."""
+    fig = go.Figure()
+    series: list[float] = []
+    if history:
+        fig.add_scatter(y=history, mode="lines+markers", name="Feature GA", line=dict(color=BLUE, width=2))
+        series.extend(history)
+    if fuzzy_history:
+        fig.add_scatter(y=fuzzy_history, mode="lines+markers", name="Fuzzy membership GA", line=dict(color=ORANGE, width=2))
+        series.extend(fuzzy_history)
+    y_range = None
+    if series:
+        low, high = min(series), max(series)
+        pad = max(0.02, (high - low) * 0.25)
+        y_range = [low - pad, high + pad]
+    n_gen = max(len(history or []), len(fuzzy_history or []))
+    fig.update_layout(
+        height=340,
+        margin=dict(l=88, r=36, t=56, b=72),
+        title=dict(text="Best fitness by generation", x=0, xanchor="left"),
+        font=_axis_font(),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+    )
+    fig.update_xaxes(
+        title=dict(text="Generation", standoff=18),
+        automargin=True,
+        range=[-0.6, max(n_gen - 1, 1) + 0.6],
+        tickfont=dict(size=13, color="#0f172a"),
+        title_font=dict(size=13, color="#0f172a"),
+    )
+    fig.update_yaxes(
+        title=dict(text="Best fitness", standoff=12),
+        automargin=True,
+        tickformat=".2f",
+        range=y_range,
+        tickfont=dict(size=13, color="#0f172a"),
+        title_font=dict(size=13, color="#0f172a"),
+    )
+    return fig
+
+
+def ga_frequency_chart(frequency: dict[str, float]) -> go.Figure:
+    """Horizontal feature frequencies. The left margin grows with the longest metric name."""
+    freq = sorted(frequency.items(), key=lambda kv: kv[1])
+    longest = max((len(name) for name, _ in freq), default=4)
+    fig = go.Figure(go.Bar(
+        x=[value for _, value in freq],
+        y=[name for name, _ in freq],
+        orientation="h",
+        marker=dict(color=BLUE),
+        cliponaxis=False,
+    ))
+    fig.update_layout(
+        height=max(360, 32 * len(freq) + 100),
+        margin=dict(l=max(168, 10 * longest + 48), r=48, t=56, b=72),
+        title=dict(text="Feature selection frequency", x=0, xanchor="left"),
+        font=_axis_font(),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+    )
+    fig.update_xaxes(
+        title=dict(text="Share of generations", standoff=16),
+        automargin=True,
+        range=[-0.08, 1.08],
+        tickvals=[0, 0.2, 0.4, 0.6, 0.8, 1],
+        tickformat=".1f",
+        tickfont=dict(size=13, color="#0f172a"),
+        title_font=dict(size=13, color="#0f172a"),
+    )
+    fig.update_yaxes(
+        automargin=True,
+        tickfont=dict(size=13, color="#0f172a"),
+    )
+    return fig
+
+
 def loss_chart(loss: list[float]) -> go.Figure:
     fig = go.Figure()
     fig.add_trace(go.Scatter(y=loss, mode="lines", name="Loss", line=dict(color=RED, width=3)))

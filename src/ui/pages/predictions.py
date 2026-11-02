@@ -9,13 +9,13 @@ from src.utils.exceptions import NeuroDefectError
 
 
 def render() -> None:
-    page_header("Neurodefect / Predictions", "Active Module Risk Evaluator")
+    page_header("NeuroDefect / Predictions", "Inspect one module")
     result = st.session_state.get("result")
     if result is None:
         empty_note("Please train a model before running predictions.")
         return
 
-    with section("Inspect Module Target", key="pr_inspect"):
+    with section("Module", key="pr_inspect"):
         ids = result.display_ids
         choice = st.selectbox("Select a held-out module", ids)
         idx = ids.index(choice)
@@ -47,9 +47,9 @@ def render() -> None:
             bg = "#fef2f2" if pred.label == "DEFECTIVE" else "#ecfdf3"
             html(
                 f"<span class='nd-badge-lg' style='background:{bg};color:{color}'>{pred.label}</span>"
-                f" &nbsp; Confidence Level: <b>{pred.confidence*100:.1f}%</b>"
-                "<p class='nd-note'>Prediction confidence is the distance from the 0.5 decision boundary, "
-                "not a statistical confidence interval.</p>"
+                f" &nbsp; Distance from 0.5: <b>{pred.confidence*100:.1f}%</b>"
+                "<p class='nd-note'>Distance from 0.5 is how far the probability sits from the default boundary. "
+                "It is not a statistical confidence interval. The defective or clean call uses the tuned cutoff.</p>"
             )
             st.caption("Testing priority from the fuzzy rules. This tier does not change the network's defective or clean call.")
             active = pred.severity.lower()
@@ -63,6 +63,11 @@ def render() -> None:
                 </div>
                 """
             )
+            top_rule = pred.risk.fired_rules[0] if pred.risk.fired_rules else None
+            if top_rule:
+                html(f"<p class='nd-note'><b>{top_rule.rule_id}.</b> {top_rule.description}</p>")
+            else:
+                st.caption("No rule fired above the minimum strength.")
 
     left, right = st.columns(2, gap="small")
     with left:
@@ -73,7 +78,7 @@ def render() -> None:
             else:
                 st.caption("No feature contributions available for this module.")
     with right:
-        with section("Active Fuzzy Reasoning Nodes", key="pr_rules"):
+        with section("Rule that fired", key="pr_rules"):
             rules = pred.risk.fired_rules[:3]
             if not rules:
                 st.caption("No rules fired above the minimum strength threshold.")

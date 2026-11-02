@@ -445,6 +445,7 @@ def train_pipeline(
         "variant": variant,
         "shap_background": shap_background,
         "ensemble": ensemble,
+        "feature_high": _feature_high(split.X_train, selected),
     }
     save_run(run_dir, bundle)
 
@@ -540,6 +541,19 @@ def _oof_bpn_probs(
         model.fit(X_tr.to_numpy(), y_tr.to_numpy())
         probs[va_idx] = model.predict_proba(X.iloc[va_idx].to_numpy())[:, 1]
     return probs
+
+
+def _feature_high(raw_train: pd.DataFrame, selected: list[str]) -> dict[str, float]:
+    """95th percentile of each selected column on the pre-SMOTE training rows."""
+    limits: dict[str, float] = {}
+    for col in selected:
+        if col not in raw_train.columns:
+            continue
+        series = pd.to_numeric(raw_train[col], errors="coerce").dropna()
+        if series.empty:
+            continue
+        limits[str(col)] = float(series.quantile(0.95))
+    return limits
 
 
 def _display_ids(dataset_name: str, test_index: list[int]) -> list[str]:

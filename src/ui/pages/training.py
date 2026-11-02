@@ -6,7 +6,7 @@ import streamlit as st
 
 from src.data.feature_map import display_name
 from src.data.imbalance import resolve_smote
-from src.data.loader import list_datasets, load_dataset
+from src.data.loader import describe_dataset_path, list_datasets, load_dataset
 from src.data.quality import build_quality_report
 from src.pipeline.trainer import train_pipeline
 from src.ui.charts import loss_chart
@@ -16,7 +16,7 @@ from src.utils.exceptions import NeuroDefectError
 
 
 def render() -> None:
-    page_header("Neurodefect / Model Training", "Interactive Engine Tuning")
+    page_header("NeuroDefect / Model Training", "Train the system")
     config = st.session_state.get("config") or load_config()
     files = list_datasets([ROOT / "data" / "sample", ROOT / "data" / "raw"])
     labels = [str(p.relative_to(ROOT)) for p in files]
@@ -27,7 +27,11 @@ def render() -> None:
     left, right = st.columns((1.15, 1.0), gap="small")
     with left:
         with section("Optimization Parameters", key="tr_params"):
-            dataset_choice = st.selectbox("Dataset Selection", labels)
+            dataset_choice = st.selectbox(
+                "Dataset Selection",
+                labels,
+                format_func=lambda name: describe_dataset_path(ROOT / name, ROOT),
+            )
             split = st.slider(
                 "Train/Test Split",
                 min_value=50,
@@ -36,37 +40,35 @@ def render() -> None:
                 step=5,
             )
             st.caption(f"{split}% / {100 - split}%")
-            html(
-                "<p class='nd-card-title' style='margin-top:0.8rem'>Genetic Algorithm Settings</p>"
-            )
             ga_defaults = config.ga()
-            c1, c2 = st.columns(2)
-            pop = c1.number_input("Pop Size", 4, 80, int(ga_defaults.get("population_size", 16)))
-            gens = c2.number_input("Generations", 2, 80, int(ga_defaults.get("generations", 12)))
-            cx = c1.number_input("Crossover Rate", 0.0, 1.0, float(ga_defaults.get("crossover_probability", 0.8)))
-            mut = c2.number_input("Mutation Rate", 0.0, 1.0, float(ga_defaults.get("mutation_probability", 0.05)))
-            probe = str(ga_defaults.get("fitness_model", "logistic"))
-            if probe == "bpn":
-                st.caption("Feature search is scored with a small copy of the neural network.")
-            else:
-                st.caption(
-                    "Feature search is a logistic filter. It does not score subsets with the neural network. "
-                    "Research mode in Settings does."
+            with st.expander("Advanced"):
+                c1, c2 = st.columns(2)
+                pop = c1.number_input("Pop Size", 4, 80, int(ga_defaults.get("population_size", 16)))
+                gens = c2.number_input("Generations", 2, 80, int(ga_defaults.get("generations", 12)))
+                cx = c1.number_input("Crossover Rate", 0.0, 1.0, float(ga_defaults.get("crossover_probability", 0.8)))
+                mut = c2.number_input("Mutation Rate", 0.0, 1.0, float(ga_defaults.get("mutation_probability", 0.05)))
+                probe = str(ga_defaults.get("fitness_model", "logistic"))
+                if probe == "bpn":
+                    st.caption("Feature search is scored with a small copy of the neural network.")
+                else:
+                    st.caption(
+                        "Feature search is a logistic filter. It does not score subsets with the neural network. "
+                        "Research mode in Settings does."
+                    )
+                stem = Path(dataset_choice).stem
+                policy_on = resolve_smote(
+                    stem,
+                    bool(config.smote().get("enabled", True)),
+                    skip=config.smote().get("skip_for"),
                 )
-            stem = Path(dataset_choice).stem
-            policy_on = resolve_smote(
-                stem,
-                bool(config.smote().get("enabled", True)),
-                skip=config.smote().get("skip_for"),
-            )
-            if st.session_state.get("_smote_for") != dataset_choice:
-                st.session_state["_smote_for"] = dataset_choice
-                st.session_state["smote_on"] = policy_on
-            smote_on = st.toggle("SMOTE Oversampling", key="smote_on")
-            if not policy_on:
-                st.caption("SMOTE starts off for CM1 and JM1 because the ablation showed it hurt them. Turn it on to force it. The test set is never resampled.")
-            else:
-                st.caption("SMOTE runs on the training rows only. Class weights are turned off for that run so the rows are not balanced twice.")
+                if st.session_state.get("_smote_for") != dataset_choice:
+                    st.session_state["_smote_for"] = dataset_choice
+                    st.session_state["smote_on"] = policy_on
+                smote_on = st.toggle("SMOTE Oversampling", key="smote_on")
+                if not policy_on:
+                    st.caption("SMOTE starts off for CM1 and JM1 because the ablation showed it hurt them. Turn it on to force it. The test set is never resampled.")
+                else:
+                    st.caption("SMOTE runs on the training rows only. Class weights are turned off for that run so the rows are not balanced twice.")
             train_clicked = st.button("Train Model Engine", type="primary", width="stretch")
 
     with right:

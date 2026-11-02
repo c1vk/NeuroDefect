@@ -2,12 +2,18 @@
   "dataset": "cm1_shared",
   "seed": 42,
   "selected_features": [
-    "b",
-    "t",
-    "uniq_Op",
-    "total_Op"
+    "loc",
+    "e",
+    "total_Op",
+    "branchCount"
   ],
-  "created": "2026-10-14T22:39:16",
+  "created": "2026-11-02T22:45:42",
   "mode": "MVP",
-  "training_seconds": 7.268813302012859
+  "training_seconds": 3.0865253339870833,
+  "feature_high": {
+    "loc": 129.60000000000002,
+    "e": 197556.06600000005,
+    "total_Op": 409.00000000000006,
+    "branchCount": 38.60000000000002
+  }
 }

@@ -16,11 +16,8 @@ LOGO_SVG = """
 """
 
 
-def render_sidebar(config: AppConfig) -> str:
+def render_sidebar(_config: AppConfig) -> str:
     current = st.session_state.get("page", "Dashboard")
-    ui = config.ui()
-    operator = ui.get("operator_name", "Dr. Alan Vance")
-    operator_id = ui.get("operator_id", "LAB-RE_01")
 
     st.markdown(
         f"""
@@ -42,19 +39,6 @@ def render_sidebar(config: AppConfig) -> str:
             st.session_state.page = key
             st.rerun()
 
-    st.markdown(
-        f"""
-        <div class="nd-user">
-          <div class="nd-avatar"></div>
-          <div>
-            <strong>{operator}</strong>
-            <span>{operator_id}</span>
-          </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-        anchors=False,
-    )
     return current
 
 

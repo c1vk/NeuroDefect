@@ -7,7 +7,7 @@ from src.utils.config import load_config
 
 
 def render() -> None:
-    page_header("Neurodefect / Settings", "Runtime Configuration")
+    page_header("NeuroDefect / Settings", "Runtime Configuration")
     config = st.session_state.get("config") or load_config()
 
     with section("Runtime", key="set_runtime"):

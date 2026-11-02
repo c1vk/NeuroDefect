@@ -10,7 +10,7 @@ from src.ui.theme import GREEN, ORANGE, RED
 
 
 def render() -> None:
-    page_header("Neurodefect / Explainability", "Explainable Logic Visualization")
+    page_header("NeuroDefect / Explainability", "Explainable Logic Visualization")
     result = st.session_state.get("result")
     if result is None:
         empty_note("Train a model to inspect GA feature ranks, membership functions, and fired fuzzy rules.")

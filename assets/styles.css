@@ -129,10 +129,6 @@ header[data-testid="stHeader"],
   min-height: 100%;
 }
 
-[data-testid="stSidebarUserContent"] [data-testid="stElementContainer"]:has(.nd-user) {
-  margin-top: auto !important;
-}
-
 [data-testid="stSidebarCollapsedControl"] {
   color: var(--nd-text);
 }
@@ -208,35 +204,6 @@ div[data-testid="stTextInput"] label {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #7b879c;
-}
-
-.nd-user {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  padding: 0.95rem 0.55rem 0.2rem 0.55rem;
-  margin-top: auto;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.nd-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #64748b, #1e293b);
-  border: 2px solid rgba(255,255,255,0.15);
-}
-
-.nd-user strong {
-  display: block;
-  color: #fff;
-  font-size: 0.86rem;
-  font-weight: 600;
-}
-
-.nd-user span {
-  color: #7b879c;
-  font-size: 0.72rem;
 }
 
 .nd-header {
@@ -361,6 +328,11 @@ div[data-testid="stTextInput"] label {
 .st-key-dash_risk [data-testid="stPlotlyChart"] {
   flex: 1 1 auto;
   min-height: 16rem;
+}
+
+.st-key-dash_ga_diag [data-testid="stPlotlyChart"],
+.st-key-dash_ga_diag [data-testid="stPlotlyChart"] > div {
+  overflow: visible !important;
 }
 
 .nd-dist-stats {

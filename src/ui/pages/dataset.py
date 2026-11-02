@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-from src.data.loader import list_datasets, load_dataset
+from src.data.loader import describe_dataset_path, list_datasets, load_dataset
 from src.data.quality import build_quality_report
 from src.ui.charts import correlation_heatmap
 from src.ui.components import empty_note, html, html_table, page_header, plotly, section
@@ -11,7 +11,7 @@ from src.utils.exceptions import NeuroDefectError
 
 
 def render() -> None:
-    page_header("Neurodefect / Dataset Analysis", "Dataset Exploration")
+    page_header("NeuroDefect / Dataset Analysis", "Dataset Exploration")
     directories = [ROOT / "data" / "sample", ROOT / "data" / "raw"]
     uploaded = st.file_uploader("Upload a NASA PROMISE CSV (optional)", type=["csv", "xlsx", "xls"])
     just_uploaded = None
@@ -33,7 +33,12 @@ def render() -> None:
 
     col_a, col_b = st.columns((2, 1), vertical_alignment="bottom")
     with col_a:
-        choice = st.selectbox("Dataset", names, key="dataset_choice")
+        choice = st.selectbox(
+            "Dataset",
+            names,
+            key="dataset_choice",
+            format_func=lambda name: describe_dataset_path(ROOT / name, ROOT),
+        )
     with col_b:
         load_clicked = st.button("Load dataset", type="primary", width="stretch")
     if just_uploaded:
@@ -55,7 +60,7 @@ def render() -> None:
 
     dataset = st.session_state.get("dataset")
     if dataset is None:
-        empty_note("Choose a bundled NASA CM1 sample or drop a PC5 / JM1 CSV into data/raw.")
+        empty_note("Choose the practice sample or a NASA file, then press Load dataset.")
         return
 
     if dataset.target_column is None:

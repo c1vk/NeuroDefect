@@ -19,7 +19,7 @@ NAV_PAGES = [
     ("Dataset Analysis", "Dataset Analysis"),
     ("Model Training", "Model Training"),
     ("Predictions", "Predictions"),
-    ("Scan & Predict", "Scan & Predict"),
+    ("Review code", "Scan & Predict"),
     ("Model Comparison", "Model Comparison"),
     ("Explainability", "Explainability"),
     ("Settings", "Settings"),

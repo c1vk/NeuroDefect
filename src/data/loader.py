@@ -85,3 +85,13 @@ def list_datasets(directories: list[Path]) -> list[Path]:
             if path.suffix.lower() in SUPPORTED_SUFFIXES:
                 found.append(path)
     return found
+
+
+def describe_dataset_path(path: Path, root: Path) -> str:
+    """Selector label. The practice file must not be read as an official NASA release."""
+    rel = path.relative_to(root).as_posix()
+    if "sample" in path.parts:
+        return f"{rel} — Practice sample (not official NASA)"
+    if path.name.lower() == "cm1.csv":
+        return f"{rel} — NASA CM1"
+    return rel

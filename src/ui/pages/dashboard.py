@@ -3,24 +3,45 @@ from __future__ import annotations
 from collections import Counter
 from pathlib import Path
 
-import plotly.graph_objects as go
 import streamlit as st
 
 from src.pipeline.predictor import recent_predictions
-from src.ui.charts import convergence_chart, donut, risk_bars
+from src.ui.charts import convergence_chart, donut, ga_fitness_chart, ga_frequency_chart, risk_bars
 from src.ui.components import empty_note, html, html_table, kpi_card, page_header, plotly, risk_chip, section
 
 
 def render() -> None:
-    page_header("Neurodefect / Home", "Decision Support Dashboard")
+    page_header("NeuroDefect / Home", "Decision Support Dashboard")
     dataset = st.session_state.get("dataset")
     result = st.session_state.get("result")
 
     if result is None:
-        empty_note(
-            "No model is trained yet. Open Model Training and press Train Model Engine. "
-            "Row counts and defect rates stay on Dataset Analysis, so this screen is not mistaken for a result."
+        st.caption(
+            "This dashboard fills in after a model is trained. "
+            "Row counts and defect rates stay on Dataset Analysis until then."
         )
+        step_data, step_train, step_inspect = st.columns(3, gap="small")
+        with step_data:
+            with section("1. Load a dataset", key="start_data_card"):
+                st.markdown(
+                    "The practice sample is already available. "
+                    "**NASA CM1** is the real file under `data/raw`."
+                )
+                if st.button("Open Dataset Analysis", key="start_data", width="stretch"):
+                    st.session_state.page = "Dataset Analysis"
+                    st.rerun()
+        with step_train:
+            with section("2. Train", key="start_train_card"):
+                st.markdown("Press **Train Model Engine**. The test rows are scored once.")
+                if st.button("Open Model Training", key="start_train", width="stretch"):
+                    st.session_state.page = "Model Training"
+                    st.rerun()
+        with step_inspect:
+            with section("3. Inspect one module", key="start_inspect_card"):
+                st.markdown("Read the network call, the review tier, and the rule that fired.")
+                if st.button("Open Predictions", key="start_inspect", width="stretch"):
+                    st.session_state.page = "Predictions"
+                    st.rerun()
         return
 
     if dataset is None:
@@ -177,22 +198,10 @@ REPORT_FIGURES = Path(__file__).resolve().parents[3] / "reports" / "figures"
 def _render_ga_diagnostics(result) -> None:
     """GA fitness by generation and feature-selection frequency (live run + saved report PNGs)."""
     if result and (result.ga_history or result.ga_feature_frequency):
-        c1, c2 = st.columns(2, gap="small")
-        with c1:
-            fig = go.Figure()
-            if result.ga_history:
-                fig.add_scatter(y=result.ga_history, mode="lines+markers", name="Feature GA")
-            if getattr(result, "fuzzy_tune_history", None):
-                fig.add_scatter(y=result.fuzzy_tune_history, mode="lines+markers", name="Fuzzy membership GA")
-            fig.update_layout(height=260, margin=dict(l=10, r=10, t=30, b=10),
-                              title="Best fitness by generation", xaxis_title="Generation")
-            plotly(fig)
-        with c2:
-            freq = sorted(result.ga_feature_frequency.items(), key=lambda kv: kv[1])
-            fig = go.Figure(go.Bar(x=[v for _, v in freq], y=[k for k, _ in freq], orientation="h"))
-            fig.update_layout(height=max(260, 18 * len(freq)), margin=dict(l=10, r=10, t=30, b=10),
-                              title="Feature selection frequency", xaxis_range=[0, 1])
-            plotly(fig)
+        fitness = ga_fitness_chart(result.ga_history, getattr(result, "fuzzy_tune_history", None))
+        frequency = ga_frequency_chart(result.ga_feature_frequency)
+        plotly(fitness, height=int(fitness.layout.height))
+        plotly(frequency, height=int(frequency.layout.height))
         st.caption(f"Fuzzy memberships: {getattr(result, 'fuzzy_mode', 'fixed_quantile')}")
     else:
         st.caption("Train a model to see live GA convergence and feature-selection frequency.")
