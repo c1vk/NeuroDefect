@@ -12,6 +12,11 @@ build/
 .pytest_cache/
 .idea/
 .vscode/
+.DS_Store
+
+# Local training dumps. The demo model is models/shared/.
+# Runs already in git stay tracked; new models/run_* folders stay on this machine.
+models/run_*/
 
 # Unpacked PowerPoint XML (keep the .pptx only)
 presentations/unpacked/
